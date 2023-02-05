@@ -1,4 +1,4 @@
-pub struct User{
+pub(crate)struct User{
     username: String,
     password: String,
     email: String,
