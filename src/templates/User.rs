@@ -9,10 +9,14 @@ pub struct User{
 impl User{
     pub fn new(username: String, pass: String, email: String, desc: String)->Self{
         User{
-            username: username,
+            username,
             password: pass,
-            email: email,
+            email,
             description: desc
         }
+    }
+
+    pub fn _print(&self){
+        println!("user: {} -- pass: {} -- email: {} -- desc: {}", self.username, self.password, self.email, self.description);
     }
 }
