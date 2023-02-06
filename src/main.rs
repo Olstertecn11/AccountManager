@@ -7,8 +7,8 @@ fn main(){
     // let usr: User = User::new("Oliver".to_string(), "daniela11".to_string(), 
                               // "olstertecn597@gmail.com".to_string(), "outlook".to_string());
     // usr._print();
-    let _users: Vec<User> = Vec::new();
-    let _run: bool = true;
+    let mut _users: Vec<User> = Vec::new();
+    let mut _run: bool = true;
     while _run {
         clear();
         println!("1- Add User");
@@ -29,7 +29,7 @@ fn main(){
         }
         if option == 2{
             clear();
-            for usr in _users{
+            for usr in &_users{
                 usr._print();
             }
             pause();
@@ -38,7 +38,7 @@ fn main(){
         if option == 3{
             clear();
             _run = false;
-            pause();
+            println!("I see you...");
         }
     }
 
