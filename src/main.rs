@@ -1,3 +1,6 @@
+mod templates;
+use crate::templates::User::User;
+
 
 fn main(){
     let usr: User = User{
